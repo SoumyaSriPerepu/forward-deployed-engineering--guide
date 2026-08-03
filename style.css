@@ -27,26 +27,24 @@ a {
   text-decoration: none;
 }
 
-.navbar {
-  max-width: 1150px;
-  margin: auto;
-  padding: 28px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    padding:28px 24px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: 700;
+.logo{
+    font-size:20px;
+    font-weight:700;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-size: 14px;
-  font-weight: 600;
+.nav-links{
+    display:flex;
+    gap:24px;
+    align-items:center;
 }
 
 .nav-links a:last-child {
