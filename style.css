@@ -281,3 +281,43 @@ footer {
     flex-direction: column;
   }
 }
+.personal-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 100px 24px;
+}
+
+.personal-content {
+  max-width: 850px;
+  padding: 60px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 36px;
+  box-shadow: 0 20px 50px rgba(23, 35, 28, 0.08);
+}
+
+.personal-content h2 {
+  margin: 14px 0 24px;
+  font-size: clamp(38px, 5vw, 56px);
+  letter-spacing: -2px;
+}
+
+.personal-content p {
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.personal-content .primary-button {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .personal-section {
+    padding: 60px 20px;
+  }
+
+  .personal-content {
+    padding: 35px 24px;
+  }
+}
