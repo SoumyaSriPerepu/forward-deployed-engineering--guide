@@ -1,0 +1,275 @@
+/* =====================================
+   BLOG ARTICLE
+===================================== */
+
+.article-hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 24px 70px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 55px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: var(--dark);
+}
+
+.article-hero h1 {
+  margin: 22px 0 30px;
+  font-size: clamp(48px, 7vw, 78px);
+  line-height: 1.04;
+  letter-spacing: -4px;
+}
+
+.article-subtitle {
+  max-width: 760px;
+  color: var(--text-muted);
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+.article-meta {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #7a857d;
+  font-size: 14px;
+}
+
+
+/* ARTICLE BODY */
+
+.blog-article {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 20px 24px 120px;
+}
+
+.blog-article p {
+  margin: 0 0 26px;
+  color: #465249;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.blog-article .article-intro {
+  margin-bottom: 35px;
+  color: var(--dark);
+  font-size: 24px;
+  line-height: 1.65;
+}
+
+.blog-article h2 {
+  margin: 75px 0 25px;
+  color: var(--dark);
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.blog-article h3 {
+  color: var(--dark);
+}
+
+.blog-article ul {
+  margin: 25px 0 35px;
+  padding-left: 25px;
+}
+
+.blog-article li {
+  margin-bottom: 12px;
+  color: #465249;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.blog-article strong {
+  color: var(--dark);
+}
+
+
+/* CALLOUT */
+
+.article-callout {
+  margin: 50px 0;
+  padding: 35px;
+  background: var(--light-green);
+  border-radius: 24px;
+}
+
+.article-callout p {
+  margin: 0;
+  color: var(--dark);
+  font-size: 20px;
+}
+
+
+/* FDE PROCESS */
+
+.fde-process {
+  margin: 45px 0;
+  border-top: 1px solid var(--border);
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 25px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.process-number {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.process-step h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.process-step p {
+  margin: 0;
+  font-size: 17px;
+}
+
+
+/* COMPARISON */
+
+.comparison-table {
+  margin: 40px 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.comparison-row div {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-row div:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.comparison-header {
+  background: var(--dark);
+  color: white;
+  font-weight: 700;
+}
+
+
+/* TECHNOLOGY CARDS */
+
+.tech-grid {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.tech-card {
+  padding: 28px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.tech-card span {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tech-card h3 {
+  margin: 18px 0 10px;
+}
+
+.tech-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* QUOTES */
+
+.blog-article blockquote {
+  margin: 40px 0;
+  padding: 10px 0 10px 30px;
+  border-left: 4px solid var(--green);
+  color: var(--dark);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+
+/* ARTICLE ENDING */
+
+.article-ending {
+  margin-top: 100px;
+  padding: 50px;
+  background: var(--light-green);
+  border-radius: 30px;
+}
+
+.article-ending h2 {
+  margin-top: 15px;
+}
+
+.article-ending .primary-button {
+  margin-top: 15px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .article-hero {
+    padding-top: 60px;
+  }
+
+  .article-hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .blog-article h2 {
+    font-size: 30px;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row div:first-child {
+    border-right: none;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .article-ending {
+    padding: 35px 25px;
+  }
+}
