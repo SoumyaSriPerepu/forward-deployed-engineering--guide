@@ -319,3 +319,19 @@ footer {
     padding: 35px 24px;
   }
 }
+.topic h3 a {
+  color: var(--dark);
+  transition: 0.2s ease;
+}
+
+.topic h3 a:hover {
+  color: var(--green);
+}
+
+.topic-clickable {
+  cursor: pointer;
+}
+
+.topic-clickable:hover {
+  background: #f6f8f5;
+}
