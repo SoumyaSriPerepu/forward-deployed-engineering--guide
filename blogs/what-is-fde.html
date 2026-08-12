@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="An introduction to Forward Deployment Engineering, what FDEs do, and how the role differs from traditional software engineering."
+  >
+
+  <title>What Is Forward Deployment Engineering? | Soumya Sri Perepu</title>
+
+  <!-- Since this file is inside /blogs, go back one level for CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+
+    <a href="../index.html" class="logo">
+      Soumya Sri Perepu
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">Blog</a>
+      <a href="../index.html#about-me">About Me</a>
+      <a href="../index.html#topics">Topics</a>
+
+      <a
+        href="https://cafe-soumya.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Café Soumya
+      </a>
+    </div>
+
+  </nav>
+
+
+  <!-- ARTICLE HEADER -->
+  <header class="article-hero">
+
+    <a href="../index.html#topics" class="back-link">
+      ← Back to all topics
+    </a>
+
+    <p class="eyebrow">
+      Forward Deployment Engineering · 01
+    </p>
+
+    <h1>
+      What Is Forward Deployment Engineering?
+    </h1>
+
+    <p class="article-subtitle">
+      Understanding the engineering role that sits between software,
+      customers, data, AI, and real-world problem solving.
+    </p>
+
+    <div class="article-meta">
+      <span>By Soumya Sri Perepu</span>
+      <span>•</span>
+      <span>6 min read</span>
+    </div>
+
+  </header>
+
+
+  <!-- ARTICLE -->
+  <article class="blog-article">
+
+    <p class="article-intro">
+      Most software engineers are taught to think about building products.
+      Forward Deployment Engineers are taught to think about something slightly
+      different: solving problems.
+    </p>
+
+    <p>
+      A Forward Deployment Engineer, commonly called an
+      <strong>FDE</strong>, combines software engineering with direct
+      customer collaboration. Instead of working only on a general product,
+      an FDE works close to the environment where that technology is actually
+      being used.
+    </p>
+
+    <p>
+      That means understanding a customer's problem, working with their data
+      and systems, building a technical solution, deploying it, and improving
+      it based on what happens in the real world.
+    </p>
+
+
+    <h2>So, what exactly is Forward Deployment Engineering?</h2>
+
+    <p>
+      Imagine that a company has built a powerful AI platform.
+    </p>
+
+    <p>
+      A hospital wants to use that platform to help its staff search thousands
+      of internal documents and quickly find relevant information.
+    </p>
+
+    <p>
+      The technology already exists, but the hospital still has many questions:
+    </p>
+
+    <ul>
+      <li>Where is the data stored?</li>
+      <li>How should employees authenticate?</li>
+      <li>Which documents should each person be allowed to access?</li>
+      <li>How do we connect the AI system to existing hospital software?</li>
+      <li>How do we evaluate whether the AI responses are actually useful?</li>
+      <li>How do we deploy the system securely?</li>
+    </ul>
+
+    <p>
+      This is where Forward Deployment Engineering becomes important.
+    </p>
+
+    <div class="article-callout">
+      <p>
+        <strong>The product provides the capability.</strong><br>
+        The Forward Deployment Engineer turns that capability into a solution
+        that works inside the customer's real environment.
+      </p>
+    </div>
+
+
+    <h2>The basic FDE cycle</h2>
+
+    <p>
+      I like to think about Forward Deployment Engineering as a five-step
+      cycle:
+    </p>
+
+    <div class="fde-process">
+
+      <div class="process-step">
+        <span class="process-number">01</span>
+
+        <div>
+          <h3>Understand</h3>
+          <p>
+            Learn how the customer currently works, what problem they are
+            experiencing, what systems they already use, and what a successful
+            outcome would look like.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="process-step">
+        <span class="process-number">02</span>
+
+        <div>
+          <h3>Build</h3>
+          <p>
+            Write the software needed to solve the problem. This could involve
+            APIs, Python services, databases, AI models, dashboards, data
+            pipelines, or integrations with existing systems.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="process-step">
+        <span class="process-number">03</span>
+
+        <div>
+          <h3>Deploy</h3>
+          <p>
+            Move the solution into a real environment using cloud
+            infrastructure, containers, CI/CD pipelines, authentication,
+            monitoring, and security controls.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="process-step">
+        <span class="process-number">04</span>
+
+        <div>
+          <h3>Learn</h3>
+          <p>
+            Observe how people actually use the system. Real users often expose
+            requirements and problems that were impossible to discover during
+            the initial design.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="process-step">
+        <span class="process-number">05</span>
+
+        <div>
+          <h3>Improve</h3>
+          <p>
+            Use feedback, logs, performance data, and customer conversations to
+            make the system more useful, reliable, secure, and scalable.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <h2>FDE vs. traditional Software Engineering</h2>
+
+    <p>
+      Forward Deployment Engineers are still software engineers. The
+      difference is mainly where the engineering begins.
+    </p>
+
+    <div class="comparison-table">
+
+      <div class="comparison-row comparison-header">
+        <div>Software Engineer</div>
+        <div>Forward Deployment Engineer</div>
+      </div>
+
+      <div class="comparison-row">
+        <div>Often focuses on the core product</div>
+        <div>Often focuses on a customer's problem</div>
+      </div>
+
+      <div class="comparison-row">
+        <div>Works primarily with engineering teams</div>
+        <div>Works with engineers and customers</div>
+      </div>
+
+      <div class="comparison-row">
+        <div>Builds reusable product features</div>
+        <div>Builds integrations and complete solutions</div>
+      </div>
+
+      <div class="comparison-row">
+        <div>Requirements may come through product teams</div>
+        <div>May discover requirements directly from users</div>
+      </div>
+
+      <div class="comparison-row">
+        <div>Usually farther from deployment environments</div>
+        <div>Often deeply involved in deployment and debugging</div>
+      </div>
+
+    </div>
+
+    <p>
+      These are not strict boundaries. Software engineers frequently interact
+      with customers, and FDEs often contribute improvements back to the core
+      product.
+    </p>
+
+    <p>
+      The important distinction is that Forward Deployment Engineering places
+      the engineer very close to the actual problem.
+    </p>
+
+
+    <h2>What does an FDE actually build?</h2>
+
+    <p>
+      There is no single type of FDE project. Depending on the company and
+      customer, an engineer might build:
+    </p>
+
+    <ul>
+      <li>AI applications</li>
+      <li>RAG systems</li>
+      <li>Internal enterprise tools</li>
+      <li>Data pipelines</li>
+      <li>Analytics dashboards</li>
+      <li>API integrations</li>
+      <li>Cloud applications</li>
+      <li>Automation systems</li>
+      <li>Model evaluation pipelines</li>
+      <li>Custom interfaces around an existing platform</li>
+    </ul>
+
+    <p>
+      Because of this variety, FDEs often need broad technical knowledge rather
+      than expertise in only one narrow technology.
+    </p>
+
+
+    <h2>The technical foundation</h2>
+
+    <p>
+      A Forward Deployment Engineer may work across several layers of a
+      technology stack:
+    </p>
+
+    <div class="tech-grid">
+
+      <div class="tech-card">
+        <span>01</span>
+        <h3>Programming</h3>
+        <p>Python, JavaScript, TypeScript, Java, or Go.</p>
+      </div>
+
+      <div class="tech-card">
+        <span>02</span>
+        <h3>Data</h3>
+        <p>SQL, databases, ETL pipelines, analytics, and data modeling.</p>
+      </div>
+
+      <div class="tech-card">
+        <span>03</span>
+        <h3>Cloud</h3>
+        <p>AWS, Azure, GCP, Docker, Kubernetes, and serverless systems.</p>
+      </div>
+
+      <div class="tech-card">
+        <span>04</span>
+        <h3>AI</h3>
+        <p>LLMs, RAG, embeddings, agents, evaluation, and model APIs.</p>
+      </div>
+
+      <div class="tech-card">
+        <span>05</span>
+        <h3>Systems</h3>
+        <p>APIs, networking, authentication, security, and system design.</p>
+      </div>
+
+      <div class="tech-card">
+        <span>06</span>
+        <h3>People</h3>
+        <p>
+          Communication, requirements discovery, demos, and translating
+          business problems into technical decisions.
+        </p>
+      </div>
+
+    </div>
+
+
+    <h2>Why communication matters</h2>
+
+    <p>
+      One of the most interesting things about Forward Deployment Engineering
+      is that being technically strong is not enough.
+    </p>
+
+    <p>
+      A customer may never tell you:
+    </p>
+
+    <blockquote>
+      "We need a containerized Python service connected to PostgreSQL with
+      OAuth authentication."
+    </blockquote>
+
+    <p>
+      Instead, they might say:
+    </p>
+
+    <blockquote>
+      "Our team spends three hours every morning manually checking these
+      reports."
+    </blockquote>
+
+    <p>
+      The engineer has to investigate the workflow and determine what should
+      actually be built.
+    </p>
+
+    <p>
+      That ability to translate an ambiguous human problem into a technical
+      system is one of the defining skills of Forward Deployment Engineering.
+    </p>
+
+
+    <h2>Forward Deployed AI</h2>
+
+    <p>
+      Generative AI is making this type of engineering particularly
+      interesting.
+    </p>
+
+    <p>
+      Building an impressive AI demo can be relatively easy. Building an AI
+      system that works reliably inside an organization is much harder.
+    </p>
+
+    <p>
+      Real deployments introduce questions about data access, hallucinations,
+      evaluation, latency, security, permissions, cost, monitoring, and
+      integration with existing systems.
+    </p>
+
+    <p>
+      This creates a natural role for Forward Deployment Engineers who
+      understand both AI technology and the environments in which that
+      technology must operate.
+    </p>
+
+
+    <h2>Why I am learning FDE</h2>
+
+    <p>
+      What interests me most about Forward Deployment Engineering is that it
+      connects several areas that are often learned separately.
+    </p>
+
+    <p>
+      Machine learning, cloud computing, databases, software engineering,
+      system design, and communication become parts of one larger process:
+      taking a real problem and building something that actually works.
+    </p>
+
+    <p>
+      That is what I want to explore through this blog.
+    </p>
+
+    <p>
+      Rather than only learning individual technologies, I want to understand
+      how they connect—from the first conversation about a problem to the final
+      production deployment.
+    </p>
+
+
+    <div class="article-ending">
+
+      <p class="eyebrow">
+        Coming next
+      </p>
+
+      <h2>
+        The Technical Foundations of Forward Deployment Engineering
+      </h2>
+
+      <p>
+        Next, I'll break down the technical skills behind FDE—from Python and
+        APIs to Docker, cloud infrastructure, networking, databases, and
+        Kubernetes.
+      </p>
+
+      <a href="../index.html#topics" class="primary-button">
+        Explore all topics →
+      </a>
+
+    </div>
+
+  </article>
+
+
+  <footer>
+    <p>© 2026 Soumya Sri Perepu</p>
+
+    <p>
+      <a
+        href="https://cafe-soumya.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Café Soumya
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
